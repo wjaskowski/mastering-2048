@@ -1,0 +1,5 @@
+*.log
+*.jar
+/*.profile
+/*.dump
+experiments

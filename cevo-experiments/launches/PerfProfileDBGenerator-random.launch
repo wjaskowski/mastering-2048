@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/cevo-experiments/src/main/java/put/ci/cevo/experiments/runs/profiles/generic/PerfProfileDatabaseGeneratorConfigured.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="put.ci.cevo.experiments.runs.profiles.generic.PerfProfileDatabaseGeneratorConfigured"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="master"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="cevo-experiments"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dhazelcast.logging.type=log4j &#10;-Dlog4j.configuration=file:${workspace_loc:cevo-experiments/experiments/othello-pprofiles/log4j.properties}&#10;-Dframework.properties=${workspace_loc:cevo-experiments/experiments/othello-pprofiles/generate-pprofile-db-random.properties}&#10;-Dhazelcast.config=${workspace_loc:cevo-experiments/experiments/othello-pprofiles/hazelcast.xml}&#10;-Xmx4g -XX:PermSize=192M -XX:MaxPermSize=192M"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:cevo-experiments/experiments/othello-pprofiles}"/>
+</launchConfiguration>

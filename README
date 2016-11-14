@@ -1,0 +1,73 @@
+Building
+--------
+
+$> mvn package
+
+$> mvn package -DskipTests
+
+Testing
+-------
+
+$> mvn test
+
+or
+
+$> mvn test -fn [do not stop on the first failed test]
+
+
+Setup and some tips for developers (Intellij - preffered):
+---------------------------------------------------------
+* [Required!] 
+    add '-parameters' in Java Compiler -> Additional command line parameters
+
+* Code style:
+    cp etc/intellij-codestyle.xml ~/Library/Preferences/IdeaIC13/codestyles/cevo.xml (on OSX)
+
+* Reformat only changed lines:
+    1. Show "reformat code" dialog
+    2. Run "reformat"
+    3. Set "Only VS changed text"
+
+
+Setup and some tips for developers (Eclipse):
+---------------------------------------------
+* [Required!] Java -> Compiler -> Store information about method parameters
+* cevo-games -> Properties -> Java Build Path -> Add Folder("cevo-games/src/test/resources")
+  [So that connect4 tests work in Eclipse (they already work from command line (maven)]
+
+* General 
+    * Editors
+        * Text Editors -> show print margin, print margin column 120
+                       -> show line numbers
+    * Appearance
+        * Label Decorations -> Java Type Indicator
+    * Workspace
+        * Encoding -> UTF-8
+        * Refresh using native hooks or polling
+        * Save automatically before build
+
+* Java
+    * JUnit
+        * "Add '-ea' to VM arguments when creating a new JUnit launch configuration
+    * Editor
+        * Content Assist -> Auto activation triggers for Java .(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 
+                            Delay 50 ms
+
+* Common save actions in Preferences -> Java -> Editor -> Save Actions:
+    * Perform the selected actions on save:
+        * Format edited lines
+    * Organize imports
+    * Additional actions:
+        * Convert control statement bodies to block
+        * Add final modifier to private fields
+        * Add missing '@Override' annotations
+        * Add missing '@Override' annotations to implementations of interface methods
+        * Add missing '@Deprecated' annotations
+        * Remove unnecessary casts
+        * Remove trailing white spaces on all lines
+
+* Load formating rules from 
+    etc/code-formatter.xml
+
+* To make launchers work: 
+      Window->Preferences->Maven->Hide Folders of Physically Nested Modules
