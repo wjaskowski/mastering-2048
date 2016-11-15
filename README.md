@@ -17,7 +17,8 @@ Java 8, Maven
 Building
 --------
 ```bash
-> mvn package
+> mvn install:install-file -Dfile=lib/stilts.jar -DgroupId=uk.ac.starlink -DartifactId=stilts -Dversion=2.4 -Dpackaging=jar
+> mvn package -Dmaven.test.skip=true
 ```
 
 Running
