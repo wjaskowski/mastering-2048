@@ -32,7 +32,7 @@ Example:
 
 >> Note: some of the experiments require a lot of memory (32GB might not be enough).
 
-Available configs: [./configs/tciaig-2048]
+[Available config files](https://github.com/wjaskowski/mastering-2048/tree/master/configs/tciaig-2048)
 
 Disclaimer
 ---------
