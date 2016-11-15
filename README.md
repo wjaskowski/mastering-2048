@@ -32,7 +32,7 @@ Example:
 
 >> Note: some of the experiments require a lot of memory (32GB might not be enough).
 
-Available configs: [configs/tciaig-2048]
+Available configs: [./configs/tciaig-2048]
 
 Disclaimer
 ---------
