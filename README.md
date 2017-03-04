@@ -2,7 +2,7 @@ About
 -----
 The source code for running the experiments for the paper:
 
->> Wojciech Jaśkowski "Mastering 2048 with Delayed Temporal Coherence Learning, Multi-State Weight Promotion, Redundant Encoding and Carousel Shaping" [[arXiv](https://arxiv.org/pdf/1604.05085.pdf)]
+>> Wojciech Jaśkowski "Mastering 2048 with Delayed Temporal Coherence Learning, Multi-State Weight Promotion, Redundant Encoding and Carousel Shaping", IEEE Transactions on Computational Intelligence and AI in Games (accepted) [[arXiv](https://arxiv.org/pdf/1604.05085.pdf)]
 
 The code in this repo has been used to train the best 2048 controller, which (along with an efficient C++ implementation) is available in a [separate repo](https://github.com/aszczepanski/2048).
 
